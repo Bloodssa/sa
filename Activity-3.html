@@ -1,0 +1,82 @@
+<!DOCTYPE HTML>
+<html>
+	<head>
+		<title></title>
+	</head>
+
+<body>
+	 <h2>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp My Information </h2>
+
+	<script>
+
+	function getfromText1() {
+
+	let a = document.getElementById("myTxt1").value;
+	let b = document.getElementById("myTxt2").value;
+	let c = document.getElementById("myTxt3").value;
+
+	document.getElementById("give1").innerHTML = a + " " + b + " " + c;
+	}
+
+
+	function getfromText2() {
+
+	let d = document.getElementById("myTxt4").value;
+	let e = document.getElementById("myTxt5").value;
+	let f = document.getElementById("myTxt6").value;
+
+	document.getElementById("give2").innerHTML = d + " " + e + " " + f;
+	}
+
+	function getfromText3() {
+
+	let g = document.getElementById("myTxt7").value;
+	let h = document.getElementById("myTxt8").value;
+
+	document.getElementById("give3").innerHTML = g + " " + h;
+	}
+	</script>
+
+	<br>
+	First Name:&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp<input type="text" id="myTxt1">
+	<br>
+
+	<br>
+	Middle Name:&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp<input type="text" id="myTxt2">
+	<br>
+
+	<br>
+	Last Name:&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp<input type="text" id="myTxt3">
+	<br>
+
+	<br>
+	Father's Name:&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp<input type="text" id="myTxt4">
+	<br>
+
+	<br>
+	Father's Last Name:&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp<input type="text" id="myTxt5">
+	<br>
+
+	<br>
+	Fathers Occupation:&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp<input type="text" id="myTxt6">
+	<br>
+
+	<br>
+	Mother's Maiden Name:&nbsp<input type="text" id="myTxt7">
+	<br>
+	<br>
+
+	Mother's Occupation:&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp<input type="text" id="myTxt8">
+
+	<br>
+	<br>
+
+	<input type="button" value="My Complete Name" onclick="getfromText1()"><h4 id="give1"></h4>
+	<br>
+	<br>
+	<input type="button" value="Father's Info" onclick="getfromText2()"><h4 id="give2"></h4>
+	<br>
+	<br>
+	<input type="button" value="Mother's Info" onclick="getfromText3()"><h4 id="give3"></h4>
+</body>
+</html>
